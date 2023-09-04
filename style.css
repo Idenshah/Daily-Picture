@@ -1,0 +1,181 @@
+html {
+  background-color: hsl(66, 54%, 89%);
+}
+
+h1 {
+  font-size: 3vw;
+  color: hsl(28, 56%, 66%);
+  text-align: center;
+}
+
+.getDate {
+  display: grid;
+  margin-left: 3vw;
+  width: 25vw;
+  height: 10vw;
+  padding: 0.2vw 0.5vw;
+  background-color: hsl(66, 54%, 85%);
+  border: 0.1vw solid hsl(63, 50%, 56%);
+}
+
+#selectDate {
+  font-weight: bold;
+  font-size: 1.5vw;
+  padding-left: 0.5vw;
+  color: hsl(30, 18%, 36%);
+}
+
+#date {
+  width: 15vw;
+  height: 2.5vw;
+  margin: 0.2vw;
+  background-color: hsl(38, 52%, 84%);
+  border: 0.1vw solid hsl(63, 50%, 51%);
+  border-radius: 0.5vw;
+  font-size: 1.5vw;
+  text-align: center;
+  color: hsl(30, 18%, 41%);
+}
+
+.submit {
+  width: 7vw;
+  height: 3vw;
+  margin: 0.2vw;
+  background-color: hsl(38, 52%, 84%);
+  color: hsl(30, 18%, 41%);
+  font-size: 1vw;
+  font-weight: bold;
+  border-radius: 0.5vw;
+  border: 0.1vw solid hsl(63, 50%, 51%);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.gallery {
+  margin: 2vw;
+
+  display: inline-flex;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10vw;
+}
+
+#boxes {
+  height: 40vw;
+  background: linear-gradient(to right, rgb(230, 217, 217), rgb(236, 241, 188));
+}
+
+h3 {
+  color: hsl(30, 90%, 34%);
+  text-align: center;
+  font-size: 2vw;
+}
+
+h4 {
+  color: hsl(30, 90%, 44%);
+  font-size: 1.5vw;
+  margin-left: 1vw;
+}
+
+p {
+  color: hsl(30, 18%, 41%);
+  text-align: justify;
+  margin: 0.5vw;
+  font-size: 1.5vw;
+}
+
+.boxOne > button {
+  margin: 2vw 2vw;
+  width: 7vw;
+  height: 2vw;
+  background-color: hsl(30, 90%, 40%);
+  color: hsl(30, 90%, 90%);
+  font-size: 1vw;
+  border-radius: 0.5vw;
+  border: 0.1vw solid black;
+}
+
+.boxOne > button:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.boxTwo {
+  background-color: hsl(66, 65%, 84%);
+  height: 40vw;
+  align-self: center;
+  padding: 0 0.5vw;
+}
+.boxTwo > img {
+  padding-top: 5vw;
+  width: 40vw;
+  height: 30vw;
+}
+
+h2 {
+  color: hsl(30, 90%, 34%);
+  font-size: 2.5vw;
+  font-weight: bold;
+  margin-left: 2vw;
+}
+
+#favoriteTitle {
+  margin-left: 2vw;
+  color: hsl(30, 90%, 44%);
+  font-size: 1.5vw;
+}
+
+.cover {
+  display: flex;
+  background-color: hsl(66, 54%, 85%);
+  height: 21vw;
+  border: 0.1vw solid hsl(63, 50%, 56%);
+  margin: 2vw;
+}
+
+.savedImage > img {
+  width: 20vw;
+  height: 15vw;
+  margin: 3vw 1vw;
+}
+
+.savedSpec > h4 {
+  font-size: 1.5vw;
+  color: hsl(30, 18%, 41%);
+  margin-top: 3vw;
+  margin-left: 2vw;
+}
+
+.savedSpec > h5 {
+  font-size: 1vw;
+  margin: 0.5vw 2vw;
+  color: hsl(30, 18%, 41%);
+}
+
+.savedSpec > button {
+  margin: 2vw 2vw;
+  width: 7vw;
+  height: 2.5vw;
+  background-color: hsl(30, 90%, 40%);
+  color: hsl(30, 90%, 90%);
+  font-size: 1vw;
+  border-radius: 0.5vw;
+  border: 0.1vw solid;
+}
+
+.savedSpec > button:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.hdImage {
+  position: absolute;
+  z-index: 3;
+  max-width: 70vw;
+  max-height: 50vw;
+  padding: 60vw 22vw;
+  top: 50vw;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}

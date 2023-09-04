@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Astronomy Picture of the Day</h1>
+      <form class="getDate">
+        <label for="date" id="selectDate">Select a date:</label>
+        <input type="date" id="date" name="date" required />
+        <button type="submit" class="submit">Get Picture</button>
+      </form>
+      <div id="gallery" class="gallery">
+        <div id="boxes"></div>
+      </div>
+      <h2>Favorites</h2>
+      <div id="favorites"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
