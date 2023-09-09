@@ -5,7 +5,6 @@ const dateInput = document.querySelector("#date");
 const apodSection = document.querySelector("#gallery");
 const favoritesSection = document.querySelector("#favorites");
 
-// Retrieve favorites from localStorage, or set an empty array if it doesn't exist
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
 form.addEventListener("submit", (event) => {
@@ -100,6 +99,9 @@ function displayApod(apodData) {
     }
   });
 
+  const imageContainer = document.createElement("div");
+  imageContainer.classList.add("image-container");
+
   const image = document.createElement("img");
   image.src = apodData.url;
   image.alt = apodData.title;
@@ -127,9 +129,9 @@ function createFavElement(apodData) {
   savedImage.classList.add("savedImage");
   savedImage.appendChild(favImage);
 
-  const favTitle = document.createElement("h4");
+  const favTitle = document.createElement("h3");
   favTitle.textContent = apodData.title;
-  const favDate = document.createElement("h5");
+  const favDate = document.createElement("h4");
   favDate.textContent = `Date: ${apodData.date}`;
 
   const removeButton = document.createElement("button");
